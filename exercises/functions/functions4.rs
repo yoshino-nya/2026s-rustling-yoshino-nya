@@ -15,11 +15,13 @@ fn main() {
 }
 
 fn sale_price(price: i32) -> i32 {
+    let mut price = price;
     if is_even(price) {
-        price - 10
+        price -= 10;
     } else {
-        price - 3
+        price -= 3;
     }
+    price
 }
 
 fn is_even(num: i32) -> bool {
